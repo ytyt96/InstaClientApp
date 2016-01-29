@@ -3,7 +3,7 @@
 //  Instagram
 //
 //  Created by Erica Lee on 1/28/16.
-//  Copyright © 2016 Erica Lee. All rights reserved.
+//  Copyright © 2016 Erica Lee, Yuting Zhang. All rights reserved.
 //
 
 import UIKit
