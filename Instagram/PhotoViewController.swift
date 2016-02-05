@@ -40,7 +40,6 @@ class PhotoViewController: UIViewController,UITableViewDataSource, UITableViewDe
                 if let data = dataOrNil {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
-                            NSLog("response: \(responseDictionary)")
                             self.media = responseDictionary["data"] as? [NSDictionary]
                             self.tableView.reloadData()
                     }
@@ -118,7 +117,6 @@ class PhotoViewController: UIViewController,UITableViewDataSource, UITableViewDe
                             if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                                 data, options:[]) as? NSDictionary {
                                     self.isMoreDataLoading = false
-                                    //NSLog("response: \(responseDictionary)")
                                     self.media?.appendContentsOf(responseDictionary["data"] as! [NSDictionary])
                                     self.tableView.reloadData()
                                     
